@@ -39,8 +39,8 @@ body {
   flex-direction: column;
 }
 .heading {
-  font-size: 3.3rem;
-  width: 89vw;
+  font-size: clamp(2.2rem, 3.2vw, 3.3rem);
+  width: clamp(30rem, 73vw, 68rem);;
   font-family: 'Poppins', sans-serif;
   font-weight: bolder;
   color: var(--textClr);
@@ -74,17 +74,18 @@ body {
     height: 5.3rem;
   }
   .community_container {
-    height: clamp(29rem, 75vw, 22rem);
+    height: clamp(29rem, 127vw, 32rem);
   }
   .Get_Started_Button {
-    font-size: clamp(0.5rem, 4vw,1rem);
+    font-size: clamp(0.5rem, 3.5vw,1rem);
     height: clamp(1rem, 12vw,3rem);
   }
   .heading {
     font-size: clamp(1.5rem, 7.3vw, 2.5rem);
+    width: 89vw;
   }
   .info {
-    margin: 1.7rem 0 2rem 0;
+    margin: 1.7rem 0 2.5rem 0;
     width: clamp(10rem, 80vw, 33rem);
   }
 
