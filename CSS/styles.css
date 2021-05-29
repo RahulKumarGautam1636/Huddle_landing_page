@@ -29,7 +29,6 @@ body {
   width: clamp(4rem, 27vw, 8rem);
   font-size: clamp(0.4rem, 3vw, 0.8rem);
 }
-/* .community_container * {border: 1px solid red;} */
 .community_container {
   height: 31rem;
   text-align: center;
@@ -49,7 +48,7 @@ body {
   word-spacing: 2px;
   width: 34rem;
   font-size: clamp(0.5rem, 4vw, 1.1rem);
-  line-height: 1.7rem;
+  line-height:  clamp(1rem, 6.5vw, 1.7rem);
   margin: 2rem 0 2.5rem 0;
   color: var(--textClr);
 }
@@ -63,12 +62,83 @@ body {
   background: var(--tryButtonClr);
   border: none;
 }
+/* ---------------------------------Page_two------------------------------------ */
+/* .page_two * {border: 1px solid red;} */
+.page_two {
+  /* height: 85rem; */
+  height: auto;
+}
+.mockup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  margin-top: 7rem;
+}
+.screen_mockup {
+  width: 68%;
+  height: auto;
+}
+.stats-container {
+  margin-top: 6rem;
+  height: 21%;
+  display: flex;
+  width: 100%;
+  padding: 0 12% 0 12%;
+}
+.stats-container > div {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.stats {
+  margin: 1rem 0 1rem 0;
+  font-size: 5rem;
+}
+/* --------------------------Page_three----------------------------------------- */
+.page_three {
+  margin-top: 12rem;
+  padding-bottom: 5rem;
+  padding: 0 10%;
+  height: 31.1rem;
+  margin-bottom: 10rem;
+}
+/* .images_container * {border: 1px solid red;} */
+.images_container {
+  height: 31vw;
+  width: 100%;
+  display: flex;
+}
+.title_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title {
+  font-size: clamp(1rem, 2.3vw, 2.2rem);
+}
+.about {
+  font-size: clamp(0.7rem, 1.2vw, 1rem);
+  width: clamp(10rem, 37vw, 31rem);
+  line-height: clamp(1rem, 2.25vw, 1.7rem);
+  margin-top: clamp(0.5rem, 1.4vw, 2rem);
+}
+.title_image {
+  padding-left: 2rem;
+}
+.titleImage {
+  width: 100%;
+  height: auto;
+}
+.images_container > div {
+  width: 50%;
+  height: 100%;
+}
 
-/* @media only screen and (max-width: 850px) {
-  html {
-    font-size: 80%;
-  }
-} */
 @media only screen and (max-width: 900px) {
   .top_logo_container {
     height: 5.3rem;
@@ -87,5 +157,26 @@ body {
   .info {
     margin: 1.7rem 0 2.5rem 0;
     width: clamp(10rem, 90vw, 33rem);
+  }
+/* -----------------------------Page_two---------------------------------------- */
+  .page_two {
+    height: auto;
+  }
+  .mockup-container {
+    height: auto;
+  }
+  .stats-container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 41rem;
+    margin-top: 2rem;
+  }
+  .stats-container > div {
+    width: 100%;
+  }
+  .screen_mockup {
+    width: 92%;
+    height: auto;
   }
 }
