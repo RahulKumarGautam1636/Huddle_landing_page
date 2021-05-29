@@ -48,7 +48,7 @@ body {
 .info {
   word-spacing: 2px;
   width: 34rem;
-  font-size: clamp(0.5rem, 3.7vw, 1.1rem);
+  font-size: clamp(0.5rem, 4vw, 1.1rem);
   line-height: 1.7rem;
   margin: 2rem 0 2.5rem 0;
   color: var(--textClr);
@@ -82,11 +82,10 @@ body {
   }
   .heading {
     font-size: clamp(1.5rem, 7.3vw, 2.5rem);
-    width: 89vw;
+    width: clamp(17rem, 82vw, 31rem);
   }
   .info {
     margin: 1.7rem 0 2.5rem 0;
-    width: clamp(10rem, 80vw, 33rem);
+    width: clamp(10rem, 90vw, 33rem);
   }
-
 }
