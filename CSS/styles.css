@@ -81,6 +81,7 @@ body {
   height: auto;
   width: 100%;
   margin-top: 7rem;
+  overflow: hidden;
 }
 .screen_mockup {
   width: 68%;
@@ -202,6 +203,7 @@ body {
   background: var(--textClr);
   display: flex;
   padding-bottom: 2rem;
+  overflow: hidden;
 }
 .footer_bg {
   width: 100%;
