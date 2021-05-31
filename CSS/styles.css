@@ -2,6 +2,9 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+html, body {
+  overflow-x: hidden !important;
+}
 :root {
   --tryButtonClr: hsl(322, 100%, 66%);
   --textClr: hsl(192, 100%, 9%);
@@ -69,9 +72,7 @@ body {
   border: none;
 }
 /* ---------------------------------Page_two------------------------------------ */
-/* .page_two * {border: 1px solid red;} */
 .page_two {
-  overflow-x: hidden;
   height: auto;
 }
 .mockup-container {
@@ -111,10 +112,8 @@ body {
 .page_three {
   margin-top: 12rem;
   padding-bottom: 5rem;
-  overflow: hidden;
   height: auto;
   margin-bottom: 11rem;
-  overflow-x: hidden;
 }
 .images_container {
   height: 31vw;
@@ -204,7 +203,6 @@ body {
   background: var(--textClr);
   display: flex;
   padding-bottom: 2rem;
-  overflow-x: hidden;
 }
 .footer_bg {
   width: 100%;
@@ -222,7 +220,6 @@ body {
 .footer_container p, h2  {
   color: white;
   width: clamp(18rem, 32vw, 23.5rem);
-  /* width: 18rem; */
 }
 .contact_container {
   display: flex;
