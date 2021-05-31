@@ -71,7 +71,7 @@ body {
 /* ---------------------------------Page_two------------------------------------ */
 /* .page_two * {border: 1px solid red;} */
 .page_two {
-  overflow: hidden;
+  overflow-x: hidden;
   height: auto;
 }
 .mockup-container {
@@ -114,7 +114,7 @@ body {
   overflow: hidden;
   height: auto;
   margin-bottom: 11rem;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .images_container {
   height: 31vw;
@@ -204,7 +204,7 @@ body {
   background: var(--textClr);
   display: flex;
   padding-bottom: 2rem;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .footer_bg {
   width: 100%;
