@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="CSS/styles.css">
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -20,18 +21,18 @@
         <button class="Get_Started_Button" type="button" name="button">Get Started For Free</button>
       </div>
      <div class="page_two">
-      <div class="mockup-container">
+      <div class="mockup-container" data-aos="fade-left">
         <img class="screen_mockup" src="CSS/images/screen-mockups.svg" alt="screen_mockup">
       </div>
     <div class="stats-container">
-      <div>
+      <div data-aos="flip-left">
         <div>
         <img src="CSS/images/icon-communities.svg" alt="communities_icon">
         <h1 class="stats">1.4k+</h1>
         <p>Communities Formed</p>
         </div>
       </div>
-      <div>
+      <div data-aos="flip-right">
         <div>
         <img src="CSS/images/icon-messages.svg" alt="messages_icon">
         <h1 class="stats">2.7m+</h1>
@@ -46,11 +47,11 @@
       <img class="bg_image one" src="CSS/images/bg-section-top-desktop-1.svg" alt="bg_image">
       <img class="bg_image bottom_bg one" src="CSS/images/bg-section-bottom-desktop-1.svg" alt="bg_image">
       <div class="images_container">
-        <div class="title_container">
+        <div class="title_container" data-aos="fade-right">
           <h2 class="title">Grow Togather</h2>
           <p class="about">Generate meaningful discussions with your audience and build a storng, loyal community. Think of the insightful conversation you miss out on with a feedback from.</p>
         </div>
-        <div class="title_image">
+        <div class="title_image" data-aos="fade-left">
           <img class="titleImage" src="CSS/images/illustration-grow-together.svg" alt="grow_togather">
         </div>
       </div>
@@ -58,12 +59,12 @@
 
     <div id="middle_bg_container" class="bg_container">
       <div id="middle_container" class="images_container">
-        <div id="middle_title_container" class="title_container">
+        <div id="middle_title_container" class="title_container" data-aos="fade-right">
           <h2 class="title">Flowing Conversations</h2>
           <p class="about">You wouldn't paginate a conversation in real life, so why do it online? Our threads have
           just-in-time loading for a more natural flow.</p>
         </div>
-        <div id="middle_image" class="title_image">
+        <div id="middle_image" class="title_image" data-aos="fade-left">
           <img class="titleImage" src="CSS/images/illustration-flowing-conversation.svg" alt="flowing_conversation">
         </div>
       </div>
@@ -74,26 +75,26 @@
       <img class="bg_image bottom_bg two" src="CSS/images/bg-section-bottom-desktop-2.svg" alt="bg_image">
 
       <div class="images_container">
-        <div class="title_container">
+        <div class="title_container" data-aos="zoom-in">
           <h2 class="title">Your Users</h2>
           <p class="about">It takes no time at all to integrate Huddle with your app's authentication solution. This means,
           once signed in to your app, your users can start chatting immediately.</p>
         </div>
-        <div class="title_image">
+        <div class="title_image" data-aos="zoom-out">
           <img class="titleImage" src="CSS/images/illustration-your-users.svg" alt="your_users">
         </div>
       </div>
     </div>
 
     </div>
-    <div class="ready_container">
+    <div class="ready_container" data-aos="flip-up">
       <h1 id="ready_title" class="title">Ready To Build Your Community?</h1>
       <button class="Get_Started_Button" type="button" name="button">Get Started For Free</button>
     </div>
 
     <div class="footer_container">
       <img class="footer_bg" src="CSS/images/bg-footer-top-desktop.svg" alt="footer_top">
-      <div>
+      <div data-aos="fade-left">
         <img id="footer_logo" class="logo" src="CSS/images/logo-light.svg" alt="logo">
         <p class="about footer_about">lorem ipsum dolr sit amet, consectetur adipiscing elit. Mauris nulla quam, hedrerit lacinia vestibulum a, ultrices quis sem.</p>
         <div class="contact_container">
@@ -110,7 +111,7 @@
           <img src="CSS/images/icon-twitter.svg" alt="twitter">
         </div>
       </div>
-      <div>
+      <div data-aos="fade-right">
         <h2>NEWSLETTER</h2>
          <p class="about footer_about">To recieve tips on how to grow your community. sign up to our weekly newsletter. we'll never send you spam or pass on your email address.</p>
          <div id="mail_container" class="contact_container">
@@ -119,5 +120,12 @@
        </div>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000
+      });
+    </script>
 </body>
 </html>
