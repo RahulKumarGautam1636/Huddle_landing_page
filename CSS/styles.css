@@ -71,7 +71,7 @@ body {
 /* ---------------------------------Page_two------------------------------------ */
 /* .page_two * {border: 1px solid red;} */
 .page_two {
-  /* height: 85rem; */
+  overflow: hidden;
   height: auto;
 }
 .mockup-container {
@@ -86,6 +86,7 @@ body {
 .screen_mockup {
   width: 68%;
   height: auto;
+  transition: 1s linear;
 }
 .stats-container {
   margin-top: 6rem;
@@ -110,10 +111,10 @@ body {
 .page_three {
   margin-top: 12rem;
   padding-bottom: 5rem;
-  /* height: 31.1rem; */
+  overflow: hidden;
   height: auto;
   margin-bottom: 11rem;
-  /* padding: 0 10%; */
+  overflow: hidden;
 }
 .images_container {
   height: 31vw;
@@ -263,6 +264,7 @@ body {
 .footer_container > div > * {
   margin-bottom: 1.5rem;
 }
+/* ------------------------------Media Query------------------------------------------------- */
 @media only screen and (max-width: 900px) {
   .top_logo_container {
     height: 5.3rem;
