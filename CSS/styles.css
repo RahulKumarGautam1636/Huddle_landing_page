@@ -261,6 +261,19 @@ html, body {
 .footer_container > div > * {
   margin-bottom: 1.5rem;
 }
+.attribution {
+  text-align: center;
+  background: hsl(233, 12%, 13%);
+}
+.attribution a {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: hsl(39, 89%, 49%);
+}
+.attribution p {
+  font-size: 0.7rem;
+  color: hsl(189, 59%, 53%);
+}
 /* ------------------------------Media Query------------------------------------------------- */
 @media only screen and (max-width: 900px) {
   .top_logo_container {
