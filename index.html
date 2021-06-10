@@ -117,8 +117,9 @@
       <h2>NEWSLETTER</h2>
       <p class="about footer_about">To recieve tips on how to grow your community. sign up to our weekly newsletter. we'll never send you spam or pass on your email address.</p>
       <div id="mail_container" class="contact_container">
-        <input id="email_input" type="text" name="mail" value="">
-        <button id="subscribe_button" type="button" name="button">Subscribe</button>
+        <input onclick="resetStatus()" id="email_input" type="text" name="">
+        <button id="subscribe_button" onclick="validate()" type="button" name="button">Subscribe</button>
+        <p id="currentStatus" class="about">Validation status will be shown here</p>
       </div>
     </div>
   </div>
@@ -128,10 +129,23 @@
   </div>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init({
-      offset: 200,
-      duration: 1000
-    });
+  AOS.init({
+    offset: 200,
+    duration: 1000
+  });
+  var email = document.getElementById("email_input");
+  var currentStatus = document.getElementById("currentStatus");
+  function validate() {
+    if (email.value === "" || !email.value.includes('@') || email.length < 6) {
+      currentStatus.innerText = "Please enter a valid email address.";
+    } else {
+      currentStatus.innerText = "Added successfully";
+    }
+    currentStatus.style.left = "0";
+  }
+  function resetStatus() {
+    currentStatus.style.left = "40rem";
+  }
   </script>
 </body>
 </html>
