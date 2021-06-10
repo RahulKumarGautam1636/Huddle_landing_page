@@ -239,7 +239,7 @@ html, body {
 #currentStatus {
   position: absolute;
   bottom: -80%;
-  left: 30rem;
+  left: 40rem;
   transition: 0.5s ease-in-out;
 }
 #footer_logo {
