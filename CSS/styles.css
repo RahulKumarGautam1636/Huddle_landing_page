@@ -225,6 +225,7 @@ html, body {
   display: flex;
   align-items: center;
   margin-top: 2%;
+  position: relative;
 }
 .contact_container img {
   margin-right: 1rem;
@@ -234,6 +235,12 @@ html, body {
 }
 .email {
   margin: -0.5rem 0 3rem 0;
+}
+#currentStatus {
+  position: absolute;
+  bottom: -80%;
+  left: 30rem;
+  transition: 0.5s ease-in-out;
 }
 #footer_logo {
   margin: 5rem 0 2.2rem 0;
@@ -254,7 +261,7 @@ html, body {
   border-radius: 5px;
   border: none;
   outline: none;
-  margin-left: 2rem;
+  margin-left: 5%;
   background: var(--tryButtonClr);
   color: white;
 }
@@ -373,6 +380,9 @@ html, body {
   }
   #mail_container {
     flex-direction: column;
+  }
+  #currentStatus {
+    position: relative;
   }
   #email_input {
     height: 2.2rem;
