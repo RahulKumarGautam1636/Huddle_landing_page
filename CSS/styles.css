@@ -199,7 +199,7 @@ html, body {
 }
 /* -------------------------------------Footer-section------------------------ */
 .footer_container {
-  height: 35rem;
+  height: 26rem;
   background: var(--textClr);
   display: flex;
   padding-bottom: 2rem;
