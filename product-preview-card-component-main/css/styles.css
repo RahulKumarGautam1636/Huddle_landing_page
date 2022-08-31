@@ -1,0 +1,40 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  /* background: cyan; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  background: hsl(30, 38%, 92%);
+  /* font-family: 'Fraunces', sans-serif; */
+}
+.container {
+  height: 420px;
+  width: 518px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+.rightDiv > * {
+  margin-bottom: 19px;
+}
+#pricing {
+  display: flex;
+  align-items: center;
+}
+button {
+  width: 100%;
+  padding: 13px;
+  border-radius: 7px;
+  border: none;
+  background: hsl(158deg 37% 25%);
+  color: white;
+  font-family: "Montserrat";
+}
+button > img {
+  margin-right: 10px;
+}
